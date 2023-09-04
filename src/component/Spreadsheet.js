@@ -50,6 +50,7 @@ export default function Spreadsheet(props) {
         setTable(remove);
         localStorage.setItem("tableData",JSON.stringify(tableData));
     }
+    
     const insertData = async(e)=>{
        e.preventDefault();
        const {cell_A,cell_B,cell_C,cell_D,cell_E} = data;
@@ -95,7 +96,7 @@ export default function Spreadsheet(props) {
                <th className="style border">B</th>
                <th className="style border">C</th>
                <th className="style border">D</th>
-               <th className="style border">E</th>
+               <th className="style border">E</th>           
                <th className='style border'>Action</th>
                 </tr>
                 </thead>
@@ -125,8 +126,8 @@ export default function Spreadsheet(props) {
                 <tr>
                     <td colSpan={7} className='border'>
                    
-                    <button className="btn-custom" onClick={onAdd}>Add</button>
-                    <button className="btn-custom" onClick={onRemove}>Remove</button>
+                    <button className="btn-custom" onClick={onAdd}>Add Row</button>
+                    <button className="btn-custom" onClick={onRemove}>Remove Row</button>
                    
                     <input type="text" className="box" disabled />
                     <span>Enter Row: </span>

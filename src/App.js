@@ -1,10 +1,12 @@
 import './App.css';
-import Spreadsheet from './Spreadsheet';
+import AddCol from './component/AddCol';
+// import Spreadsheet from './component/Spreadsheet';
 
 function App() {
   return (
    <>
-   <Spreadsheet title="Untitled Spreadsheet"/>
+   {/* <Spreadsheet title="Untitled Spreadsheet"/> */}
+   <AddCol title="Untitled Spreadsheet"/>
    </>
   );
 }
